@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{!-- materalize and font-awesome--}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>StoryBooks</title>
+</head>
+
+<body>
+    {{>_header}}
+    {{!-- Comment :  if you guys wanna make comments in your hbs file btw--}}
+    <div class="container">
+        {{{body}}} {{!-- use three to parse html double is for raw, allowing HTML injection and two: generates the text HTML escaped, so prevents HTML injection, triple--}}
+    </div>
+    
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+        M.Sidenav.init(document.querySelector('.sidenav'))
+    </script>
+
+</body>
+
+</html>
